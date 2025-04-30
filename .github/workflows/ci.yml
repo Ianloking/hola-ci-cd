@@ -20,3 +20,6 @@ jobs:
       - run: npm install
       - run: npm test
       - run: echo "Build exitoso"
+
+      - name: Build Docker image
+        run: docker build -t hola-ci-cd .
